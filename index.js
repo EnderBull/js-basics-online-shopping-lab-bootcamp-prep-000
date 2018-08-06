@@ -86,7 +86,7 @@ function removeFromCart(item) {
   
   
   for (var i = 0; i < cart.length; i++){
-    testItem = cart[i].itemName
+    testItem = cart[i].item
     console.log(testItem)
   
   
