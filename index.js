@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var price = Math.floor(100*(Math.random()))
- var itemObject = {item: price  }
+ var itemObject = {itemName: item, itemPrice: price  }
  cart.push(itemObject);
  
  console.log(`${item} has been added to your cart.`)
@@ -34,7 +34,7 @@ var cartString = "In your cart, you have "
 
 for (var i = 0; i < cart.length; i++){
          
-        inCart.push(cart[i].item + " at $" + cart[i].price)
+        inCart.push(cart[i].itemName + " at $" + cart[i].itemPrice)
 }
   
   if (cart.length === 0){
@@ -71,7 +71,7 @@ function total() {
   // write your code here
   var priceTotal = 0
   for (var i = 0; i < cart.length; i++){
-    priceTotal+=cart[i].price
+    priceTotal+=cart[i].itemPrice
   }
   console.log("Your price total is $" + priceTotal + ".")
   return priceTotal
@@ -86,7 +86,7 @@ function removeFromCart(item) {
   
   
   for (var i = 0; i < cart.length; i++){
-    testItem = cart[i].item
+    testItem = cart[i].itemName
     console.log(testItem)
   
   
