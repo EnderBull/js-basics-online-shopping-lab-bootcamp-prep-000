@@ -65,7 +65,6 @@ for (var i = 0; i < cart.length; i++){
   
 
 }
-viewCart();
 
 function total() {
   // write your code here
@@ -77,7 +76,6 @@ function total() {
   return priceTotal
 }
 
-total();
 var myTotal = total()
 
 function removeFromCart(item) {
